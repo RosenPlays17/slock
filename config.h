@@ -2,24 +2,25 @@
 static const char *user  = "finn";
 static const char *group = "finn";
 
+// Font settings for the time text
+static const float textsize = 64.0;
+static const char* textfamily = "Rubik";
+static const double textcolorred = 239;
+static const double textcolorgreen = 219;
+static const double textcolorblue = 255;
+
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "#000000",     /* after initialization */
-	[INPUT] =  "#1a1a1a",   /* during input */
+	[INIT] =   "#16111b",     /* after initialization */
+	[INPUT] =  "#16111b",   /* during input */
 	[FAILED] = "#ff0000",   /* wrong password */
 };
 
 /* treat a cleared input like a wrong password (color) */
 static const int failonclear = 1;
 
-/* default message */
-static const char * message = "bleibe fern Vagabund";
-
-/* text color */
-static const char * text_color = "#ffffff";
-
-/* text size (must be a valid size) */
-static const char * font_name = "-schumacher-clean-bold-r-normal--16-160-75-75-c-80-iso646.1991-irv";
-
 /* number of failed password attempts until failcommand is executed.
    Set to 0 to disable */
 static const int failcount = 1;
+
+/* Background image path */
+static const char* background_image = "/home/finn/Pictures/cherry-blossom.jpg";
